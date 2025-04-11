@@ -7,13 +7,13 @@ const ServicesAreas = () => {
         <div className=" lg:flex lg:space-evenly ">
           <div className="mb-10 lg:w-[55%] lg:mb-0">
             <h2 className="2xl:text-6xl text-center md:text-left md:text-[3.8vw] text-[6vw]  font-light mb-12 mr-2">
-              Our Location
+              Location
             </h2>
 
             <div className="sm:flex gap-16">
               <div>
                 <p className="2xl:text-xl sm:text-[1.3vw]  text-[4vw] font-light">
-                  .421 E Intendencia St, Pensacola, FL 32502
+                  421 E Intendencia St, Pensacola, FL 32502
                 </p>
               </div>
             </div>

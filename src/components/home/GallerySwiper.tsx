@@ -44,37 +44,41 @@ export default function GallerySwiper({ slides }: { slides: GallerySlide[] }) {
                             </div>
                         </div>
                         <div className="px-[4.5vw] 2xl:text-3xl sm:text-[1.8vw] text-sm mt-5">
-                            <p className="mb-5">{slide.title}</p>
                             <div className="md:flex justify-between">
                                 <div className="md:flex md:items-center gap-5">
-                                    <p className="mb-5 lg:text-lg sm:text-[1.5vw] text-xs">
-                                        {slide.address}
-                                    </p>
-                                    <div className="flex gap-4">
-                                        <GalleryInfo
-                                            icon={<Baths />}
-                                            detail={`${slide.baths} Baths`}
-                                        />
-                                        <VerticalLine />
-                                        <GalleryInfo icon={<Bed />} detail={`${slide.beds} Beds`} />
-                                        <VerticalLine />
-                                        <GalleryInfo
-                                            icon={<Area />}
-                                            detail={`${slide.area} Sq.ft`}
-                                        />
-                                    </div>
+
                                 </div>
-                                <div className="flex justify-end gap-5 mt-5 md:mt-1">
-                                    <CircleIcon onClick={() => swiperRef.current?.slidePrev()} />
-                                    <CircleIcon
-                                        onClick={() => swiperRef.current?.slideNext()}
-                                        right
-                                    />
-                                </div>
+
                             </div>
                         </div>
                     </SwiperSlide>
                 ))}
+                <div className="px-[4.5vw]">
+                    <p className="2xl:text-3xl sm:text-[1.8vw] text-sm">
+                        Villa Intendencia
+                    </p>
+                    <p className="mb-5 lg:text-lg sm:text-[1.5vw] text-xs ">421 E Intendencia St, Pensacola, FL 32502</p>
+                    <div className="flex gap-4">
+                        <GalleryInfo
+                            icon={<Baths />}
+                            detail={`2 Baths`}
+                        />
+                        <VerticalLine />
+                        <GalleryInfo icon={<Bed />} detail={`2 Beds`} />
+                        <VerticalLine />
+                        <GalleryInfo
+                            icon={<Area />}
+                            detail={`400 Sq.ft`}
+                        />
+                    </div>
+                </div>
+                <div className="flex justify-end gap-5 mt-5 md:mt-1 px-[4.5vw]">
+                    <CircleIcon onClick={() => swiperRef.current?.slidePrev()} />
+                    <CircleIcon
+                        onClick={() => swiperRef.current?.slideNext()}
+                        right
+                    />
+                </div>
             </Swiper>
         </>
     )

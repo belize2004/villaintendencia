@@ -34,7 +34,7 @@ export default async function page() {
                 src={image}
                 fill
                 alt={`Modern house image ${index + 1}`}
-                className="object-cover"
+                className="object-cover bg-[#C4A77D]"
               />
             </div>
           ))}
