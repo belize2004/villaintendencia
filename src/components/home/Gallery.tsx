@@ -1,6 +1,6 @@
 import React from "react";
 import GallerySwiper from "./GallerySwiper";
-import { getGalleryItems, getSimpleText } from "@/sanity/lib/queries";
+import { getGalleryItems } from "@/sanity/lib/queries";
 export type GallerySlide = {
   _id: string;
   title: string;
