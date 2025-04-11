@@ -18,7 +18,6 @@ export type GallerySlide = {
 };
 
 export default async function Gallery() {
-  const data = await getSimpleText();
   const slides: GallerySlide[] = await getGalleryItems();
 
   return (
