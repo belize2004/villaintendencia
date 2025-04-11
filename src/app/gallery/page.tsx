@@ -1,3 +1,5 @@
+export const revalidate = 0;
+
 import HeroSection from "@/components/home/HeroSection";
 import Image from "next/image";
 import React from "react";

@@ -1,6 +1,6 @@
 import React from "react";
 import GallerySwiper from "./GallerySwiper";
-import { getGalleryItems } from "@/sanity/lib/queries";
+import { getGalleryItems, getSimpleText } from "@/sanity/lib/queries";
 export type GallerySlide = {
   _id: string;
   title: string;
@@ -18,8 +18,8 @@ export type GallerySlide = {
 };
 
 export default async function Gallery() {
-
-  const slides: GallerySlide[] =  await getGalleryItems();
+  const data = await getSimpleText();
+  const slides: GallerySlide[] = await getGalleryItems();
 
   return (
     <div className="w-full bg-black text-white py-12">

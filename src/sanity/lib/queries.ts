@@ -1,7 +1,18 @@
 import { client } from "./client";
-
+export const getSimpleText = async () => {
+  return client.fetch(
+    `*[_type == "simpleText"][0]{
+      text
+    }`,
+    {},
+    {
+      next: { tags: ["simpleText"] }, // <- this is impsortant for tag-based revalidation
+    }
+  );
+};
 export const getHomeBanner = async () => {
-  return client.fetch(`
+  return client.fetch(
+    `
     *[_type == "homebanner"][0]{
       image {
         asset -> {
@@ -9,62 +20,88 @@ export const getHomeBanner = async () => {
         }
       }
     }
-  `);
+    `,
+    {},
+    { next: { tags: ["homebanner"] } } // Added revalidation tag
+  );
 };
+
 export const getGalleryBanner = async () => {
-  return client.fetch(`
-      *[_type == "gallerybanner"][0]{
-        image {
-          asset -> {
-            url
-          }
+  return client.fetch(
+    `
+    *[_type == "gallerybanner"][0]{
+      image {
+        asset -> {
+          url
         }
       }
-    `);
-};
-export const getDowntownPansacola = async () => {
-  return client.fetch(`
-        *[_type == "downtownpansacola"][0]{
-          image {
-            asset -> {
-              url
-            }
-          }
-        }
-      `);
-};
-export const getGalleryItems = async () => {
-  return client.fetch(`
-    *[_type == "gallery"]{
-      _id,
-      title,
-      address,
-      beds,
-      baths,
-      area,
-      "image": image
     }
-  `);
+    `,
+    {},
+    { next: { tags: ["gallerybanner"] } } // Added revalidation tag
+  );
 };
-export const getGalleryImagesItems = async () => {
-  return client.fetch(`
-      *[_type == "gallery"]{
-        image {
-          asset -> {
-            url
-          }
+
+export const getDowntownPansacola = async () => {
+  return client.fetch(
+    `
+    *[_type == "downtownpansacola"][0]{
+      image {
+        asset -> {
+          url
         }
       }
-    `);
+    }
+    `,
+    {},
+    { next: { tags: ["downtownpansacola"] } } // Added revalidation tag
+  );
 };
-export const getGalleryImagesSquare = async () => {
-  return client.fetch(`
-        *[_type == "gallery"]{
-          imageSquare {
-            asset -> {
-              url
-            }
-          }
+
+export const getGalleryItems = async () => {
+  const query = `*[_type == "gallery"]{
+    _id,
+    title,
+    address,
+    beds,
+    baths,
+    area,
+    "image": image
+  }`;
+
+  // This one already has a tag
+  const data = await client.fetch(query, {}, { next: { tags: ["gallery"] } });
+  return data;
+};
+
+export const getGalleryImagesItems = async () => {
+  return client.fetch(
+    `
+    *[_type == "gallery"]{
+      image {
+        asset -> {
+          url
         }
-      `);
+      }
+    }
+    `,
+    {},
+    { next: { tags: ["gallery"] } } // Added revalidation tag
+  );
+};
+
+export const getGalleryImagesSquare = async () => {
+  return client.fetch(
+    `
+    *[_type == "gallery"]{
+      imageSquare {
+        asset -> {
+          url
+        }
+      }
+    }
+    `,
+    {},
+    { next: { tags: ["gallery"] } } // Added revalidation tag
+  );
 };

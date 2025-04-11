@@ -89,7 +89,7 @@ function CircleIcon({
 }) {
     return (
         <div
-            className="flex border-2 border-white hover:border-[#C4A77D] items-center justify-center sm:w-[60px] w-[50px] h-[50px] sm:h-[60px] rounded-full cursor-pointer hover:bg-[#C4A77D]"
+            className="flex border-2 border-white items-center justify-center sm:w-[60px] w-[50px] h-[50px] sm:h-[60px] rounded-full cursor-pointer hover:bg-[#C4A77D] hover:border-[#C4A77D]"
             onClick={onClick}
         >
             <svg
