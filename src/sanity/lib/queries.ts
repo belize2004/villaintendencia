@@ -77,7 +77,7 @@ export const getGalleryItems = async () => {
 export const getGalleryImagesItems = async () => {
   return client.fetch(
     `
-    *[_type == "gallery"]{
+    *[_type == "gallery"] | order(_createdAt desc){
       image {
         asset -> {
           url
@@ -93,7 +93,7 @@ export const getGalleryImagesItems = async () => {
 export const getGalleryImagesSquare = async () => {
   return client.fetch(
     `
-    *[_type == "gallery"]{
+    *[_type == "gallery"] | order(_createdAt desc){
       imageSquare {
         asset -> {
           url
