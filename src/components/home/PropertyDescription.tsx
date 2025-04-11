@@ -1,10 +1,11 @@
+
 import React from "react";
 
-export default function SimpleText() {
+export default function PropertyDescription() {
   return (
-    <div className="w-full bg-black mx-auto lg:px-20 px-[5vw] py-12 text-white space-y-5 ">
-      <p className="lg:text-6xl text-3xl text-center">Property Description</p>
-      <p className="lg:text-xl ">
+    <div className="w-full mx-auto lg:px-20 px-[5vw] py-12 space-y-5 ">
+      <h2 className="lg:text-6xl text-3xl text-center" data-aos="fade-up">Property Description</h2>
+      <p className="lg:text-xl " data-aos="fade-up">
         A Turnkey Multi-Property Gem in the Heart of Downtown Pensacola’s
         Historic Seville District Welcome to Villa Intendencia, a rare and
         exceptional opportunity to own a fully renovated, professionally

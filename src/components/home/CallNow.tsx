@@ -5,10 +5,10 @@ import Link from "next/link";
 
 const CallNow = () => {
   return (
-    <div className="w-full bg-black text-white py-20">
+    <div className="w-full py-20 bg-primary">
       <div className="2xl:container mx-auto px-6   2xl:px-8">
         <div className=" lg:flex lg:space-evenly ">
-          <div className="lg:w-[45%]  aspect-square relative">
+          <div className="lg:w-[45%]  aspect-square relative" data-aos="fade-right">
             <Image
               src="/images/person.png"
               alt="Service Areas Map"
@@ -17,14 +17,14 @@ const CallNow = () => {
             />
           </div>
           <div className="mb-10 lg:w-[55%] p-[2vw] lg:mb-0">
-            <h2 className="2xl:text-6xl  md:text-[3.8vw] text-[6vw]  font-light mb-12 mr-2">
+            <h2 className="2xl:text-6xl  md:text-[3.8vw] text-[6vw]  font-light mb-12 mr-2" data-aos="fade-up">
               Meet Caroline Jordan Your Next Realtor
             </h2>
 
             <div className=" gap-16">
               {/* Left column of areas */}
               <div>
-                <p className="2xl:text-xl sm:text-[1.3vw]  text-[4vw] font-light">
+                <p className="2xl:text-xl sm:text-[1.3vw]  text-[4vw] font-light" data-aos="fade-up">
                   Hello, I’m Caroline Jordan—the owner of Coastal Link
                   Properties LLC vacation rentals. For over 10 years, I have
                   enjoyed providing superior vacation rental services to the
@@ -34,10 +34,10 @@ const CallNow = () => {
                   especially love the people I connect with each day.
                 </p>
               </div>
-              <div className="flex justify-end mt-5 ">
+              <div className="flex justify-end mt-5" data-aos="fade-up">
                 <Link
                   href="tel:+1234567890"
-                  className="bg-[#C4A77D] hover:bg-transparent hover:text-[#C4A77D] border-1 hover:cursor-pointer border-[#C4A77D] flex justify-center items-center p-4 gap-5"
+                  className="bg-accent hover:bg-transparent hover:text-accent border-1 hover:cursor-pointer border-accent flex justify-center items-center p-4 gap-5"
                 >
                   <Phone />
                   Call Now

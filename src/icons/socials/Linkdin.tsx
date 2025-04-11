@@ -3,7 +3,7 @@ import React from "react";
 export default function Linkdin() {
   return (
     <svg width="30" height="31" viewBox="0 0 30 31" fill="none">
-      <circle cx="15" cy="15.6274" r="15" fill="#C4A77D" />
+      <circle cx="15" cy="15.6274" r="15" fill="accent" />
       <g clipPath="url(#clip0_43_80)">
         <path
           fillRule="evenodd"

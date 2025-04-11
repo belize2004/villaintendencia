@@ -19,7 +19,7 @@ export default function HeroSection({
   // Optional: prevent background scroll when menu is open
 
   return (
-    <div className="relative xl:h-screen xl:w-full aspect-[16/9]">
+    <div className="relative xl:h-screen xl:w-full aspect-[16/9] overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0 flex">
         <div className="w-full relative aspect-[16/9]">
@@ -28,6 +28,7 @@ export default function HeroSection({
             alt="Downtown Pensacola"
             fill
             style={{ objectFit: "cover" }}
+            
           />
         </div>
       </div>
@@ -37,7 +38,7 @@ export default function HeroSection({
 
       {/* Navbar */}
       <nav
-        className={`fixed w-full top-0 z-30 flex ${styles.navBar} backdrop-blur-md 2xl:px-8 2xl:py-5 px-[3vw] py-[1.3vw]`}
+        className={`fixed w-screen shadow top-0 z-30 flex ${styles.navBar} backdrop-blur-md 2xl:px-8 2xl:py-5 px-[3vw] py-[1.3vw]`}
       >
         {/* Toggle Button */}
         <button
@@ -49,19 +50,19 @@ export default function HeroSection({
         </button>
 
         {/* Title */}
-        <div className="relative w-full text-[4vw] sm:text-[2.5vw] 2xl:text-4xl">
+        <h4 className="relative w-full text-[4vw] sm:text-[2.5vw] 2xl:text-4xl text-accent">
           <Link
             href="/"
-            className="text-white sm:text-center text-right transition block"
+            className="sm:text-center text-right transition block"
           >
             Villa Intendencia
           </Link>
-        </div>
+        </h4>
       </nav>
 
       {/* Slide-out Drawer */}
       <div
-        className={`fixed top-0 left-0 w-64 h-full bg-black bg-opacity-90 z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed bg-background shadow-lg top-0 left-0 min-w-1/4 h-full bg-opacity-90 z-50 transform transition-transform duration-300 ease-in-out ${
           menuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -75,14 +76,14 @@ export default function HeroSection({
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path
                 d="M18 6L6 18"
-                stroke="white"
+                stroke="currentColor"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
               />
               <path
                 d="M6 6L18 18"
-                stroke="white"
+                stroke="currentColor"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -91,11 +92,11 @@ export default function HeroSection({
           )}
         </button>
         <div className="pt-20 px-8">
-          <ul className="space-y-6 text-white">
+          <ul className="space-y-6">
             <li>
               <Link
                 href="/"
-                className="text-xl hover:text-[#C4A77D] transition"
+                className="text-xl hover:text-accent transition"
                 onClick={() => setMenuOpen(false)}
               >
                 Home
@@ -104,10 +105,19 @@ export default function HeroSection({
             <li>
               <Link
                 href="/gallery"
-                className="text-xl hover:text-[#C4A77D] transition"
+                className="text-xl hover:text-accent transition"
                 onClick={() => setMenuOpen(false)}
               >
                 Gallery
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/property-description"
+                className="text-xl hover:text-accent transition"
+                onClick={() => setMenuOpen(false)}
+              >
+                Property Description
               </Link>
             </li>
           </ul>
@@ -115,8 +125,8 @@ export default function HeroSection({
       </div>
 
       {/* Hero Text */}
-      <div className="text-white absolute z-30 2xl:bottom-5 2xl:left-[2.7vw] bottom-[1.3vw] left-[2vw]">
-        <p className="2xl:text-8xl text-[6vw]">{title}</p>
+      <div className="absolute z-30 2xl:bottom-5 2xl:left-[2.7vw] bottom-[1.3vw] left-[2vw]">
+        <h1 className="2xl:text-8xl text-[6vw]">{title}</h1>
         <p className="2xl:text-3xl text-[1.8vw]">{description}</p>
       </div>
     </div>

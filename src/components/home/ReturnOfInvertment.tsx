@@ -138,7 +138,7 @@ export default function ReturnOfInvestment() {
       key: "grossOperatingIncome",
       label: "GROSS OPERATING INCOME",
       isCurrency: true,
-      isGoldText: true,
+      isTotal: true,
     },
   ];
 
@@ -146,7 +146,7 @@ export default function ReturnOfInvestment() {
   const YearSelector = () => (
     <div className="relative inline-block">
       <button
-        className="flex items-center justify-between gap-2 px-3 py-1 font-medium bg-[#C4A77D] text-black min-w-[80px] hover:bg-[#C4A77D] transition-colors"
+        className="flex items-center justify-between gap-2 px-3 py-1 font-medium bg-accent text-black min-w-[80px] hover:bg-accent transition-colors"
         onClick={() => setIsYearMenuOpen(!isYearMenuOpen)}
       >
         <DropDown />
@@ -154,11 +154,11 @@ export default function ReturnOfInvestment() {
       </button>
 
       {isYearMenuOpen && (
-        <div className="absolute right-0 mt-1 w-full bg-[#1a1a1a] border border-[#333]  shadow-lg z-10">
+        <div className="absolute right-0 mt-1 w-full bg-accent bg-opacity-50 border border-accent  shadow-lg z-10">
           {investmentData.map((data) => (
             <button
               key={`year-option-${data.year}`}
-              className="block w-full  text-left px-3 py-1.5 text-white hover:text-[#C4A77D] hover:bg-[#333] transition-colors"
+              className="block w-full  text-left px-3 py-1.5 hover:text-accent hover:bg-[#333] transition-colors"
               onClick={() => {
                 setSelectedYear(data.year);
                 setIsYearMenuOpen(false);
@@ -188,12 +188,13 @@ export default function ReturnOfInvestment() {
     return (
       <div
         key={key.toString()}
-        className={`group grid grid-cols-2 lg:grid-cols-2 ${fontWeightClass} hover:bg-[#111] transition-colors py-0.5`}
+        data-aos="fade-up"
+        className={`group grid grid-cols-2 lg:grid-cols-2 ${fontWeightClass} cursor-default transition-colors py-0.5`}
       >
         {/* Left label column */}
         <div
           className={`col-span-1 text-sm md:text-base transition-colors ${
-            isGoldText ? "text-[#C4A77D]" : "group-hover:text-[#C4A77D]"
+            isGoldText ? "text-accent" : "group-hover:text-accent"
           }`}
         >
           {label}
@@ -202,7 +203,7 @@ export default function ReturnOfInvestment() {
         {/* Mobile & Tablet Right Value */}
         <div
           className={`lg:hidden text-right text-sm md:text-base transition-colors ${
-            isGoldText ? "text-[#C4A77D]" : "group-hover:text-[#C4A77D]"
+            isGoldText ? "text-accent" : "group-hover:text-accent"
           }`}
         >
           {isCurrency
@@ -216,7 +217,7 @@ export default function ReturnOfInvestment() {
             <div
               key={`${key}-${data.year}`}
               className={`hidden lg:block text-center text-sm md:text-base transition-colors ${
-                isGoldText ? "text-[#C4A77D]" : "group-hover:text-[#C4A77D]"
+                isGoldText ? "text-accent" : "group-hover:text-accent"
               }`}
             >
               {isCurrency ? `$${formatCurrency(data[key])}` : data[key]}
@@ -228,15 +229,15 @@ export default function ReturnOfInvestment() {
   };
 
   return (
-    <div className="bg-black text-white p-4 md:p-6 lg:p-8  w-full  font-light">
-      <p className="lg:text-6xl text-3xl text-center text-white bg-black py-5">
+    <div className="p-4 md:p-6 lg:p-8  w-full  font-light">
+      <h2 className="lg:text-6xl text-3xl text-center py-5" data-aos="fade-up">
         Return Of Investment
-      </p>
+      </h2>
 
       {/* RENTAL INCOME SECTION */}
-      <div className="mb-6">
+      <div className="mb-6" data-aos="fade-up">
         <div className="flex justify-between items-center mb-2">
-          <p className="text-[#C4A77D] text-lg md:text-[2.5vw] 2xl:text-4xl lg:hidden font-medium">
+          <p className="text-accent text-lg md:text-[2.5vw] 2xl:text-4xl lg:hidden font-medium">
             Rental Income
           </p>
 
@@ -248,7 +249,7 @@ export default function ReturnOfInvestment() {
 
         {/* Desktop View - Table Headers */}
         <div className="hidden lg:grid lg:grid-cols-2 mb-1">
-          <p className="text-[#C4A77D] text-lg md:text-[1.5vw] 2xl:text-3xl font-medium">
+          <p className="text-lg md:text-[1.5vw] 2xl:text-3xl font-medium">
             Rental Income
           </p>
           <div className="hidden lg:grid lg:grid-cols-3">
@@ -257,7 +258,7 @@ export default function ReturnOfInvestment() {
                 key={`header-${data.year}`}
                 className="text-center text-lg  md:text-[1.5vw] 2xl:text-3xl"
               >
-                <span className="text-[#C4A77D] ">Year-{data.year}</span>
+                <span>Year-{data.year}</span>
               </div>
             ))}
           </div>
@@ -268,14 +269,14 @@ export default function ReturnOfInvestment() {
       </div>
 
       {/* EXPENSES SECTION */}
-      <div className="mb-6">
-        <p className="text-[#C4A77D] text-lg md:text-[2.5vw] 2xl:text-4xl font-medium">
+      <div className="mb-6" data-aos="fade-up">
+        <p className="text-lg md:text-[2.5vw] 2xl:text-4xl font-medium">
           Expenses
         </p>
 
         <div className="space-y-1.5">{expenseRows.map(renderDataRow)}</div>
       </div>
-      <div className="h-0.25 w-full bg-[#C4A77D] mb-4"></div>
+      <div className="h-0.25 w-full bg-foreground mb-4"></div>
       {/* GROSS OPERATING INCOME */}
       <div>{summaryRows.map(renderDataRow)}</div>
     </div>

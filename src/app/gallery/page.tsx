@@ -26,15 +26,17 @@ export default async function page() {
         img={galleryBanner?.image?.asset?.url || heroImg}
       />
 
-      <div className="w-full bg-black mx-auto 2xl:px-20 px-[3vw] py-12">
+      <div className="w-full mx-auto 2xl:px-20 px-[3vw] py-12 mb-20">
         <div className="grid lg:grid-cols-2 2xl:gap-20 gap-[3vw]">
           {galleryImagesSquare.map((image: string, index: number) => (
-            <div key={index} className="relative aspect-square">
+            <div key={index} className="relative aspect-square"
+            >
               <Image
                 src={image}
                 fill
                 alt={`Modern house image ${index + 1}`}
-                className="object-cover bg-[#C4A77D]"
+                className="object-cover bg-accent"
+                data-aos="fade-up"
               />
             </div>
           ))}
