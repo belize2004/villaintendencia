@@ -59,15 +59,15 @@ export const getDowntownPansacola = async () => {
 };
 
 export const getGalleryItems = async () => {
-  const query = `*[_type == "gallery"]{
-    _id,
-    title,
-    address,
-    beds,
-    baths,
-    area,
-    "image": image
-  }`;
+  const query = `*[_type == "gallery"] | order(_createdAt desc){
+  _id,
+  title,
+  address,
+  beds,
+  baths,
+  area,
+  "image": image
+}`;
 
   // This one already has a tag
   const data = await client.fetch(query, {}, { next: { tags: ["gallery"] } });
