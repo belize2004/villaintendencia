@@ -59,12 +59,12 @@ export default function GallerySwiper({ slides }: { slides: GallerySlide[] }) {
                     </p>
                     <p className="mb-5 lg:text-lg sm:text-[1.5vw] text-xs ">421 E Intendencia St, Pensacola, FL 32502</p>
                     <div className="flex gap-4">
+                        <GalleryInfo icon={<Bed />} detail={`2 Beds`} />
+                        <VerticalLine />
                         <GalleryInfo
                             icon={<Baths />}
                             detail={`2 Baths`}
                         />
-                        <VerticalLine />
-                        <GalleryInfo icon={<Bed />} detail={`2 Beds`} />
                         <VerticalLine />
                         <GalleryInfo
                             icon={<Area />}
