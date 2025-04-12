@@ -25,6 +25,21 @@ export const getHomeBanner = async () => {
     { next: { tags: ["homebanner"] } } // Added revalidation tag
   );
 };
+export const getPropertyDescriptionBanner = async () => {
+  return client.fetch(
+    `
+    *[_type == "propertydescription"][0]{
+      image {
+        asset -> {
+          url
+        }
+      }
+    }
+    `,
+    {},
+    { next: { tags: ["propertydescription"] } } // Added revalidation tag
+  );
+};
 
 export const getGalleryBanner = async () => {
   return client.fetch(

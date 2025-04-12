@@ -6,3 +6,11 @@
     rgba(176, 197, 202, 1) 100%
   );
 }
+
+.imageGlare {
+  background: linear-gradient(
+    0deg,
+    rgba(176, 197, 202, 0.2),
+    rgba(176, 197, 202, 0.2)
+  );
+}

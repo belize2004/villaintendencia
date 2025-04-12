@@ -28,7 +28,6 @@ export default function HeroSection({
             alt="Downtown Pensacola"
             fill
             style={{ objectFit: "cover" }}
-            
           />
         </div>
       </div>
@@ -51,10 +50,7 @@ export default function HeroSection({
 
         {/* Title */}
         <h4 className="relative w-full text-[4vw] sm:text-[2.5vw] 2xl:text-4xl text-accent">
-          <Link
-            href="/"
-            className="sm:text-center text-right transition block"
-          >
+          <Link href="/" className="sm:text-center text-right transition block">
             Villa Intendencia
           </Link>
         </h4>

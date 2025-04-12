@@ -38,6 +38,7 @@ export default function GallerySwiper({ slides }: { slides: GallerySlide[] }) {
                                         src={urlFor(slide.image).url()}
                                         alt="Villa Intendencia Full Duplex"
                                         style={{ objectFit: "cover" }}
+                                        className="bg-accent"
                                         fill
                                     />
                                 )}

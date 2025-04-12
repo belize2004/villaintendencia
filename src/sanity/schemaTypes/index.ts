@@ -1,10 +1,16 @@
 import { type SchemaTypeDefinition } from "sanity";
 
+import propertydescription from "../schemas/propertydescription";
 import homebanner from "../schemas/homebanner";
 import downtownpansacola from "../schemas/downtownpansacola";
 import gallerybanner from "../schemas/gallerybanner";
 import gallery from "../schemas/gallery";
-import simpleText from "../schemas/simpleText";
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [homebanner, gallerybanner, gallery, downtownpansacola, simpleText],
+  types: [
+    homebanner,
+    gallerybanner,
+    gallery,
+    downtownpansacola,
+    propertydescription,
+  ],
 };
