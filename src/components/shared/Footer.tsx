@@ -129,14 +129,12 @@ function SocialLinks() {
             stroke="#EDECE7"
           />
         </svg>
-        <div>Powered by Flow Design</div>
+        <div>Powered by <Link href="https://www.flowwebdesigner.com/" target="_blank" className="hover:underline">Flow Web Design</Link></div>
         <svg
           width="41"
           height="35"
           viewBox="0 0 41 35"
           fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          href="http://www.w3.org/1999/xlink"
         >
           <rect
             y="0.97168"
