@@ -1,6 +1,6 @@
 export const revalidate = 0;
 import HeroSection from "@/components/home/HeroSection";
-import ReturnOfInvestment from "@/components/home/ReturnOfInvertment";
+// import ReturnOfInvestment from "@/components/home/ReturnOfInvertment";
 import { getPropertyDescriptionBanner } from "@/sanity/lib/queries";
 import Image from "next/image";
 import React from "react";
