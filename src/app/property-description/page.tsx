@@ -7,7 +7,7 @@ import React from "react";
 const img = "/images/perperty-description.jpeg";
 const img1 = "/images/perperty-description1.jpg";
 const img2 = "/images/perperty-description5.png";
-const img4 = "/images/perperty-description4.jpeg";
+const img4 = "/images/Image 4-13-25 at 9.22 AM.jpeg";
 export default async function page() {
   const propertyDescriptionBanner = await getPropertyDescriptionBanner();
   return (
@@ -51,12 +51,12 @@ export default async function page() {
             , this stunning property package seamlessly blends historic
             character with modern amenities. Every structure has been
             thoughtfully renovated or built new in 2022 with full permitting,
-            inspections, and no detail overlooked. Whether you’re looking for an
-            <span className="font-bold">owner-occupy + rental </span>setup, a
+            inspections, and no detail overlooked. Whether you’re looking for an{" "}
+            <span className="font-bold">owner-occupy + rental </span>setup, aa{" "}
             <span className="font-bold">multigenerational estate</span>, or a{" "}
-            <span className="font-bold">
-              high-performing short-term or long-term rental investment
-            </span>
+            <span className="font-bold">{" "}
+              income-producing short-term or long-term rental investment
+            </span>{" "}
             , Villa Intendencia offers unparalleled flexibility, location, and
             comfort.
           </p>
@@ -240,18 +240,19 @@ export default async function page() {
                 High-performing short-term rental history (Airbnb superhosts
                 since 2014)
               </li>
-              <li>Zoned for multifamily and rental use</li>
+              <li>Zoned HR-1 Historic District Residential</li>
               <li>Owner-occupy or invest with flexibility</li>
               <li>Professionally maintained and managed</li>
               <li>
                 Fully turnkey – furnishings, décor, kitchenware, linens and all
                 appliances included
               </li>
+              <li>Unit is a long term and currently rents for $2300</li>
             </ul>
           </div>
         </div>
       </div>
-      <ReturnOfInvestment />
+      {/* <ReturnOfInvestment /> */}
       <div
         className="bg-[#b3c6c9] py-10 px-[4.1vw] flex justify-end"
         data-aos="fade-up"

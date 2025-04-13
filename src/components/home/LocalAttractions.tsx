@@ -10,6 +10,12 @@ const img5 = "/images/location-attraction5.jpeg";
 const img6 = "/images/location-attraction6.jpeg";
 const img7 = "/images/location-attraction7.jpeg";
 const img8 = "/images/location-attraction8.jpeg";
+const img9 = "/images/Dharma Blue restaurant.png";
+const img10 = "/images/Hub Staceys Pub.png";
+const img11 = "/images/Juans flying burrito.png";
+const img12 = "/images/LUCY’S IN THE SQAURE.png";
+const img13 = "/images/old christ church.png";
+const img14 = "/images/Pensacola bay brewery.png";
 
 const galleryImagesSquare = [
   { src: img1, label: "Historic Pensacola Village" },
@@ -20,6 +26,12 @@ const galleryImagesSquare = [
   { src: img6, label: "Saenger Theatre" },
   { src: img7, label: "Plaza Ferdinand VII" },
   { src: img8, label: "Veterans Memorial Park" },
+  { src: img9, label: "Dharma Blue Restaurant" },
+  { src: img10, label: "Hub Staceys Pub" },
+  { src: img11, label: "Juans Flying Burrito" },
+  { src: img12, label: "LUCY’S IN THE SQAURE" },
+  { src: img13, label: "Old Christ Church" },
+  { src: img14, label: "Pensacola Bay Brewery" },
 ];
 
 export default function LocalAttractions() {

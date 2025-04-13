@@ -67,35 +67,43 @@ export default function GallerySwiper({ slides }: { slides: GallerySlide[] }) {
                             />
                         </div>
                     </div>
-                    <div className="flex gap-4 items-center mb-5 ">
-                        <p className="lg:text-lg sm:text-[1.5vw] text-xs" data-aos="fade-up">421 E Intendencia St, Pensacola, FL 32502</p>
+                    <div className="flex gap-4 md:items-center mb-5 flex-col md:flex-row">
+                        <p className="lg:text-lg sm:text-[1.5vw] text-xs" data-aos="fade-up">421 E Intendencia St, Pensacola, FL 32502 - 2 Portions (Lower/Upper)</p>
                         <div className="flex gap-4">
-                            <GalleryInfo icon={<Bed />} detail={`2 Beds`} />
-                            <VerticalLine />
+                            <GalleryInfo icon={<Bed />} detail={`1 Bed`} />
                             <GalleryInfo
                                 icon={<Baths />}
-                                detail={`2 Baths`}
+                                detail={`1 Bath`}
                             />
-                            <VerticalLine />
                             <GalleryInfo
                                 icon={<Area />}
-                                detail={`400 Sq.ft`}
+                                detail={`731 Sq.ft`}
+                            />
+                            <VerticalLine />
+                            <GalleryInfo icon={<Bed />} detail={`2 Beds`} />
+                            <GalleryInfo
+                                icon={<Baths />}
+                                detail={`1 Bath`}
+                            />
+                            <GalleryInfo
+                                icon={<Area />}
+                                detail={`1214 Sq.ft`}
                             />
                         </div>
                     </div>
-                    <div className="flex gap-4 items-center mb-5 ">
+                    <div className="flex gap-4 md:items-center mb-5 flex-col md:flex-row">
                         <p className="lg:text-lg sm:text-[1.5vw] text-xs" data-aos="fade-up">423 E Intendencia St, Pensacola, FL 32502</p>
                         <div className="flex gap-4">
                             <GalleryInfo icon={<Bed />} detail={`2 Beds`} />
                             <VerticalLine />
                             <GalleryInfo
                                 icon={<Baths />}
-                                detail={`2 Baths`}
+                                detail={`1 Bath`}
                             />
                             <VerticalLine />
                             <GalleryInfo
                                 icon={<Area />}
-                                detail={`400 Sq.ft`}
+                                detail={`975 Sq.ft`}
                             />
                         </div>
                     </div>

@@ -5,7 +5,7 @@ import Email from "@/icons/socials/Email";
 export default function Footer() {
   const contactList = [
     { name: "+1 (251) 504-6642", link: "tel:+1234567890" },
-    { name: "caroline@coastallinkproperties.com", link: "/" },
+    { name: "caroline@coastallinkproperties.com", link: "mailto:caroline@coastallinkproperties" },
   ];
   const linksList = [
     { name: "Home", link: "/" },
@@ -23,6 +23,13 @@ export default function Footer() {
             <InfoLinks title="Contact" list={contactList} />
           </div>
         </div>
+        <p className="text-center mb-4">
+          Coastal Link Realty is a licensed real estate broker in Florida, serving Pensacola, Gulf Breeze, Pensacola Beach, Pace, Milton, and Cantonment. No guarantee, warranty, or representation of any kind is made regarding the completeness or accuracy of property descriptions or measurements (including square footage, condition, and other details), and such information should be independently verified by buyers and sellers. Coastal Link Realty expressly disclaims any liability in connection with this information. This website does not provide financial or legal advice. Please consult a qualified professional for any such guidance. Coastal Link Realty is an Equal Housing Opportunity provider and complies with all applicable fair housing laws, including those concerning source of income. We do not discriminate against voucher holders or any other protected class. For more information, please view our Terms of Service and Privacy Policy.</p>
+
+        <p className="text-center mb-4">
+          At Coastal Link Realty, we are committed to providing a website that is accessible to all users, including those with disabilities. We continuously strive to improve the usability and accessibility of our site by adhering to the Web Content Accessibility Guidelines (WCAG) 2.1. If you experience difficulty accessing any content or require assistance, please contact us at <Link href="tel:+1234567890" className="underline">(251) 504-6642</Link> or <Link href="mailto:caroline@coastallinkproperties.COM" className="underline">caroline@coastallinkproperties</Link>. We will make every reasonable effort to accommodate your needs.
+        </p>
+
         <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-foreground to-transparent" />
 
         {/* Bottom section with copyright and terms */}
