@@ -67,7 +67,7 @@ export default function GallerySwiper({ slides }: { slides: GallerySlide[] }) {
                             />
                         </div>
                     </div>
-                    <div className="flex gap-4 md:items-center mb-5 flex-col md:flex-row">
+                    <div className="flex gap-4 md:items-center mb-5 flex-col md:flex-row mt-5">
                         <p className="lg:text-lg sm:text-[1.5vw] text-xs" data-aos="fade-up">421 E Intendencia St, Pensacola, FL 32502 - 2 Portions (Lower/Upper)</p>
                         <div className="flex gap-4">
                             <GalleryInfo icon={<Bed />} detail={`1 Bed`} />

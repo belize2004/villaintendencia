@@ -7,6 +7,7 @@ import OurLocation from "@/components/home/OurLocation";
 import CallNow from "@/components/home/CallNow";
 import LocalAttractions from "@/components/home/LocalAttractions";
 import DiningAndNight from "@/components/home/DiningAndNight ";
+import Video from "@/components/home/Video";
 const img = "/images/banner.jpeg";
 export default async function HomePage() {
   const homeBanner = await getHomeBanner();
@@ -23,6 +24,7 @@ export default async function HomePage() {
 "
       />
       <Gallery />
+      <Video />
       <PropertyDescription
         title="Seville District"
         description="Villa Intendencia is nestled in the heart of Pensacola’s Seville Historic District, one of the oldest and most vibrant neighborhoods in the state. With its tree-lined streets, 19th-century homes and brick sidewalks, the area exudes charm and walkability. Seville Square, the neighborhood’s stunning live oak lined park, hosts major festivals like Pensacola JazzFest, Pensacola Seafood Festival, and Great Gulfcoast Arts Festival. 

@@ -38,6 +38,3 @@ h6 {
   font-family: var(--font-syncopate);
 }
 
-img {
-  @apply bg-accent;
-}

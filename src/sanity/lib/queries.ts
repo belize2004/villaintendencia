@@ -120,3 +120,11 @@ export const getGalleryImagesSquare = async () => {
     { next: { tags: ["gallery"] } } // Added revalidation tag
   );
 };
+
+export const getVideo = async () => {
+  return client.fetch(
+    `*[_type == "video"]{ title, "videoUrl": videoFile.asset->url }`,
+    {}, // params go here
+    { next: { tags: ["video"] } } // revalidation tags go here
+  );
+};

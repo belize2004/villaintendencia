@@ -7,31 +7,51 @@ const CallNow = () => {
   return (
     <div className="w-full py-20 bg-primary">
       <div className="2xl:container mx-auto px-6   2xl:px-8">
-        <div className=" lg:flex lg:space-evenly ">
-          <div className="lg:w-[45%]  aspect-square relative" data-aos="fade-right">
+        <div>
+          <div className="md:w-1/2 mx-auto aspect-square relative" data-aos="fade-right">
             <Image
-              src="/images/person.png"
+              src="/images/person.jpeg"
               alt="Service Areas Map"
               fill
               className="object-cover"
             />
+            <div className="absolute top-0 left-0">
+              <Image src="/images/Link_reality.png" alt="Link Reality Gulf Coast" className="" width={250} height={250} />
+            </div>
           </div>
-          <div className="mb-10 lg:w-[55%] p-[2vw] lg:mb-0">
+          <div className="mb-5 md:mb-10 p-[2vw] lg:mb-0">
             <h2 className="2xl:text-6xl  md:text-[3.8vw] text-[6vw]  font-light mb-12 mr-2" data-aos="fade-up">
               Meet Caroline Jordan
             </h2>
 
-            <div className=" gap-16">
+            <div className="gap-5 md:gap-16">
               {/* Left column of areas */}
-              <div>
-                <p className="2xl:text-xl sm:text-[1.3vw]  text-[4vw] font-light" data-aos="fade-up">
-                  Hello, I’m Caroline Jordan—the owner of Coastal Link
-                  Properties LLC vacation rentals. For over 10 years, I have
-                  enjoyed providing superior vacation rental services to the
-                  Gulf Coast. My goal is always to grow a better business that
-                  focuses on building great rapport with property owners, and
-                  each and every one of our guests. I love what I do, and
-                  especially love the people I connect with each day.
+              <div className="2xl:text-xl sm:text-[1.3vw]  text-[4vw] font-light space-y-3">
+                <p data-aos="fade-up" className="flex flex-col">
+                  <span>Caroline Jordan</span>
+                  <span>Owner, Coastal Link Properties</span>
+                  <span>LLC Licensed Broker, Florida & Alabama</span>
+                </p>
+                <p data-aos="fade-up">Caroline Jordan is a licensed Realtor and broker in both Alabama and Florida, and the founder of Link Realty Gulf Coast a real estate agency, and Coastal Link Properties a boutique vacation rental and real estate management company serving the Gulf Coast. With more than a decade of experience in real estate and property management, Caroline has built a business rooted in integrity, connection, and exceptional service.</p>
+
+                <p data-aos="fade-up">
+                  Originally from Gulfport, Mississippi, Caroline fell in love with the Alabama and Northwest Florida coast during her younger years, eventually settling in Orange Beach where she launched her real estate career. After working with RE/MAX and gaining experience in everything from appraisals to design, she took over the vacation rental business, Rental Link, in 2014 and rebranded it as Coastal Link Properties. At the same time Caroline started Link Realty Gulf Coast, where she serves as broker and agent helping both buyers and sellers in their real estate journeys. Today, she operates both companies from Pensacola, Florida, managing a growing portfolio of investment properties and real estate listings along the Alabama and Northwest Florida coasts.
+                </p>
+
+                <p data-aos="fade-up">
+                  As both a Realtor and a broker, Caroline offers her clients strategic insight into property acquisition, marketing, and long-term investment. She assists clients in identifying, purchasing, and preparing properties for the short-term rental market, creating turnkey experiences that generate strong returns and guest loyalty. Her dual licensure in Alabama and Florida allows her to serve a broad region,and her boutique approach means every owner and guest receives highly personalized care.
+                </p>
+
+                <p data-aos="fade-up">
+                  Caroline is known for being hands-on, honest and incredibly relationship driven. Whether she’s helping a buyer find their dream home, advising an investor on a revenue-generating property, or preparing a guest’s rental to feel like a home away from home, she gives every detail her full attention.
+                </p>
+
+                <p data-aos="fade-up">
+                  Caroline has cultivated a loyal network of clients, property owners, and returning guests who appreciate her warm communication, sharp market knowledge, and commitment to excellence. She sees herself not just as a real estate professional, but as a trusted partner—one who values long-term relationships over quick transactions.
+                </p>
+
+                <p data-aos="fade-up">
+                  For Caroline, it’s not just about buying, selling or managing properties, it’s about building trust, creating joy and growing a business rooted in love for the Gulf Coast and the people who make it special.
                 </p>
               </div>
               <div className="flex justify-end mt-5" data-aos="fade-up">

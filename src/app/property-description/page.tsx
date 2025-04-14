@@ -150,7 +150,7 @@ export default async function page() {
           className="2xl:text-4xl sm:text-[2.8vw] text-lg mb-4"
           data-aos="fade-up"
         >
-          421 E Intendencia St – Modern Two-Level Duplex + Garage (Built New in
+          421 E Intendencia St – Modern Two-Level + Garage (Built New in
           2022)
         </h1>
         <div
@@ -217,9 +217,37 @@ export default async function page() {
             </ul>
           </div>
 
+          {/* Local Attractions */}
+          <div>
+            <p className="font-bold">
+              Local Attractions
+            </p>
+            <ul className="list-disc list-inside space-y-1 mt-2">
+              <li><em>Seville Square:</em> Lush park with gazebos, festivals, and shaded walking paths</li>
+              <li><em>Historic Pensacola Village:</em> Living history museums and colonial homes</li>
+              <li>Pensacola Museum of History</li>
+              <li>Pensacola Museum of Art</li>
+              <li>Plaza Ferdinand VII</li>
+              <li>Tivoli High House</li>
+              <li>Saenger Theatre</li>
+              <li>Veterans Memorial Park</li>
+            </ul>
+          </div>
+
+          {/* Dining & Night Life */}
+          <div>
+            <p className="font-bold">
+              Dining & Night Life
+            </p>
+            <ul className="list-disc list-inside space-y-1 mt-2">
+              <li>Seville Quarter: A 7-room entertainment complex with live music, piano bars, dance clubs, and more</li>
+              <li>Hub Stacey’s, Dharma Blue, Pensacola Bay Brewery, The Fish House and Juan’s Flying Burrito – all within walking distance. Palafox Street, home to dozens of restaurants, bars and shops, is also an easy walk.</li>
+            </ul>
+          </div>
+
           {/* Proximity */}
           <div>
-            <p className="font-bold uppercase text-sm tracking-wide">
+            <p className="font-bold">
               Proximity
             </p>
             <ul className="list-disc list-inside space-y-1 mt-2">
@@ -232,22 +260,23 @@ export default async function page() {
 
           {/* Investment Highlights */}
           <div>
-            <p className="font-bold uppercase text-sm tracking-wide">
+            <p className="font-bold">
               Investment Highlights
             </p>
             <ul className="list-disc list-inside space-y-1 mt-2">
               <li>
-                High-performing short-term rental history (Airbnb superhosts
+                Short-term rental history (Airbnb superhosts
                 since 2014)
               </li>
               <li>Zoned HR-1 Historic District Residential</li>
               <li>Owner-occupy or invest with flexibility</li>
+              <li>Lower unit is a long term and currently rents for $2300</li>
               <li>Professionally maintained and managed</li>
               <li>
                 Fully turnkey – furnishings, décor, kitchenware, linens and all
                 appliances included
               </li>
-              <li>Unit is a long term and currently rents for $2300</li>
+              <li>Downstairs Unit is a long term and currently rents for $2300</li>
             </ul>
           </div>
         </div>
