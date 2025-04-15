@@ -28,9 +28,8 @@ const CallNow = () => {
               {/* Left column of areas */}
               <div className="2xl:text-xl sm:text-[1.3vw]  text-[4vw] font-light space-y-3">
                 <p data-aos="fade-up" className="flex flex-col">
-                  <span>Caroline Jordan</span>
-                  <span>Owner, Coastal Link Properties</span>
-                  <span>LLC Licensed Broker, Florida & Alabama</span>
+                  <span>Owner, Coastal Link Properties LLC and Link Realty Gulf Coast LLC</span>
+                  <span>Licensed Broker, Florida & Alabama</span>
                 </p>
                 <p data-aos="fade-up">Caroline Jordan is a licensed Realtor and broker in both Alabama and Florida, and the founder of Link Realty Gulf Coast a real estate agency, and Coastal Link Properties a boutique vacation rental and real estate management company serving the Gulf Coast. With more than a decade of experience in real estate and property management, Caroline has built a business rooted in integrity, connection, and exceptional service.</p>
 

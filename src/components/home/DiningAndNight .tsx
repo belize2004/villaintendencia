@@ -11,11 +11,11 @@ const DiningAndNight = () => {
         Dining & Night Life
       </h2>
       <div
-        className="flex flex-col-reverse lg:flex-row gap-6"
+        className="flex flex-col-reverse gap-6"
         data-aos="fade-up"
       >
         {/* Main Image 75% - Now on the right in md screens due to flex-row-reverse */}
-        <div className="lg:w-3/4 relative aspect-video">
+        <div className="relative aspect-video">
           <Image
             src="/images/dining1.jpeg"
             alt="Seville Square nightlife"
@@ -35,7 +35,7 @@ const DiningAndNight = () => {
         </div>
 
         {/* Right Side Content - Now on the left in md screens */}
-        <div className="lg:w-1/4 w-full relative flex flex-row-reverse lg:flex-col justify-between gap-10 items-end lg:items-start">
+        <div className="w-full relative flex flex-row-reverse lg:flex-col justify-between gap-10 items-end lg:items-start">
           {/* Text Description */}
           <div className="mb-4">
             <p className="text-sm ">
@@ -47,7 +47,7 @@ const DiningAndNight = () => {
           </div>
 
           {/* Small Image */}
-          <div className="relative aspect-square hidden sm:block w-[400px] lg:w-full">
+          {/* <div className="relative aspect-square hidden sm:block w-[400px] lg:w-full">
             <Image
               src="/images/dining2.jpeg"
               alt="Fine dining plate"
@@ -55,7 +55,7 @@ const DiningAndNight = () => {
               style={{ objectFit: "cover" }}
             />
             <div className="bg-secondary/20 w-full h-full inset-0 absolute" />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
