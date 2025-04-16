@@ -11,6 +11,10 @@ import { urlFor } from "@/sanity/lib/image";
 import Baths from "@/icons/Baths";
 import Bed from "@/icons/Bed";
 import Area from "@/icons/Area";
+import Sofa from "@/icons/Sofa";
+import Kitchen from "@/icons/Kitchen";
+import Garage from "@/icons/Garage";
+import Patio from "@/icons/Patio";
 
 export default function GallerySwiper({ slides }: { slides: GallerySlide[] }) {
     const swiperRef = useRef<SwiperType | null>(null);
@@ -26,13 +30,13 @@ export default function GallerySwiper({ slides }: { slides: GallerySlide[] }) {
                 onSwiper={(swiper) => {
                     swiperRef.current = swiper;
                 }}
-                className="my-10"
+                className="my-10 overflow-hidden"
             >
                 {slides.map((slide, idx) => (
                     <SwiperSlide key={slide._id || idx}>
                         {/* Image section */}
                         <div className="px-[4.5vw]" data-aos="fade-up">
-                            <div className="w-full relative aspect-[16/9]">
+                            <div className="!w-full relative aspect-[16/9]">
                                 {slide.image && (
                                     <Image
                                         src={urlFor(slide.image).url()}
@@ -54,61 +58,108 @@ export default function GallerySwiper({ slides }: { slides: GallerySlide[] }) {
                         </div>
                     </SwiperSlide>
                 ))}
-                <div className="px-[4.5vw]">
-                    <div className="flex justify-between flex-col-reverse lg:flex-row">
-                        <p className="2xl:text-3xl sm:text-[1.8vw] text-sm mb-4" data-aos="fade-up">
-                            Villa Intendencia - $1,801,930
-                        </p>
-                        <div className="flex justify-end gap-5">
-                            <CircleIcon onClick={() => swiperRef.current?.slidePrev()} />
-                            <CircleIcon
-                                onClick={() => swiperRef.current?.slideNext()}
-                                right
-                            />
-                        </div>
+            </Swiper>
+            <div className="px-[4.5vw]">
+                <div className="flex justify-between flex-col-reverse lg:flex-row">
+                    <p className="2xl:text-3xl sm:text-[1.8vw] text-sm mb-4" data-aos="fade-up">
+                        Villa Intendencia - $1,801,930
+                    </p>
+                    <div className="flex justify-end gap-5">
+                        <CircleIcon onClick={() => swiperRef.current?.slidePrev()} />
+                        <CircleIcon
+                            onClick={() => swiperRef.current?.slideNext()}
+                            right
+                        />
                     </div>
-                    <div className="flex gap-4 md:items-center mb-5 flex-col md:flex-row mt-5">
-                        <p className="lg:text-lg sm:text-[1.5vw] text-xs" data-aos="fade-up">421 E Intendencia St, Pensacola, FL 32502 - 2 Portions (Lower/Upper)</p>
-                        <div className="flex gap-4">
-                            <GalleryInfo icon={<Bed />} detail={`1 Bed`} />
-                            <GalleryInfo
-                                icon={<Baths />}
-                                detail={`1 Bath`}
-                            />
-                            <GalleryInfo
-                                icon={<Area />}
-                                detail={`731 Sq.ft`}
-                            />
-                            <VerticalLine />
-                            <GalleryInfo icon={<Bed />} detail={`2 Beds`} />
-                            <GalleryInfo
-                                icon={<Baths />}
-                                detail={`1 Bath`}
-                            />
-                            <GalleryInfo
-                                icon={<Area />}
-                                detail={`1214 Sq.ft`}
-                            />
+                </div>
+                <div className="flex gap-4 mb-5 flex-col mt-5">
+                    <p className="lg:text-lg sm:text-[1.5vw] text-xs font-semibold" data-aos="fade-up">421 E Intendencia St, Pensacola, FL 32502</p>
+                    <div className="flex gap-4 flex-col lg:flex-row">
+                        <div className="flex flex-col gap-2.5">
+                            <p className="font-semibold text-center lg:text-lg sm:text-[1.5vw] text-xs">Option A</p>
+                            <div className="flex gap-4">
+                                <div className="flex flex-col gap-2.5">
+                                    <div className="flex gap-4">
+                                        <GalleryInfo icon={<Bed />} detail={`1 Bed`} />
+                                        <GalleryInfo
+                                            icon={<Baths />}
+                                            detail={`1 Bath`}
+                                        />
+                                        <GalleryInfo
+                                            icon={<Area />}
+                                            detail={`731 Sq.ft`}
+                                        />
+                                    </div>
+                                    <p className="text-center lg:text-lg sm:text-[1.5vw] text-xs">Lower Portion</p>
+                                </div>
+                                <div className="flex flex-col gap-2.5">
+                                    <div className="flex gap-4">
+                                        <VerticalLine />
+                                        <GalleryInfo icon={<Bed />} detail={`2 Beds`} />
+                                        <GalleryInfo
+                                            icon={<Baths />}
+                                            detail={`1 Bath`}
+                                        />
+                                        <GalleryInfo
+                                            icon={<Area />}
+                                            detail={`1214 Sq.ft`}
+                                        />
+                                    </div>
+                                    <p className="text-center lg:text-lg sm:text-[1.5vw] text-xs">Upper Portion</p>
+                                </div>
+
+                            </div>
                         </div>
-                    </div>
-                    <div className="flex gap-4 md:items-center mb-5 flex-col md:flex-row">
-                        <p className="lg:text-lg sm:text-[1.5vw] text-xs" data-aos="fade-up">423 E Intendencia St, Pensacola, FL 32502</p>
-                        <div className="flex gap-4">
-                            <GalleryInfo icon={<Bed />} detail={`2 Beds`} />
-                            <VerticalLine />
-                            <GalleryInfo
-                                icon={<Baths />}
-                                detail={`1 Bath`}
-                            />
-                            <VerticalLine />
-                            <GalleryInfo
-                                icon={<Area />}
-                                detail={`975 Sq.ft`}
-                            />
+                        <div className="flex flex-col gap-2.5">
+                            <p className="font-semibold text-center lg:text-lg sm:text-[1.5vw] text-xs">Option B</p>
+                            <div className="flex gap-4 flex-wrap">
+                                <VerticalLine className="hidden: lg:block"/>
+                                <GalleryInfo icon={<Bed />} detail={`3 Beds`} />
+                                <GalleryInfo
+                                    icon={<Baths />}
+                                    detail={`2 Baths`}
+                                />
+                                <GalleryInfo
+                                    icon={<Area />}
+                                    detail={`1945 Sq.ft`}
+                                />
+                                <GalleryInfo
+                                    icon={<Sofa />}
+                                    detail={`2 Living rooms`}
+                                />
+                                <GalleryInfo
+                                    icon={<Kitchen />}
+                                    detail={`2 Kitchens`}
+                                />
+                                <GalleryInfo
+                                    icon={<Garage />}
+                                    detail={`2 Car Garage`}
+                                />
+                                <GalleryInfo
+                                    icon={<Patio />}
+                                    detail={`Patio`}
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
-            </Swiper>
+                <div className="flex gap-4 mb-5 flex-col font-semibold">
+                    <p className="lg:text-lg sm:text-[1.5vw] text-xs" data-aos="fade-up">423 E Intendencia St, Pensacola, FL 32502</p>
+                    <div className="flex gap-4">
+                        <GalleryInfo icon={<Bed />} detail={`2 Beds`} />
+                        <VerticalLine />
+                        <GalleryInfo
+                            icon={<Baths />}
+                            detail={`1 Bath`}
+                        />
+                        <VerticalLine />
+                        <GalleryInfo
+                            icon={<Area />}
+                            detail={`975 Sq.ft`}
+                        />
+                    </div>
+                </div>
+            </div>
         </>
     )
 }

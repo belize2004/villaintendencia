@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Facebook from "@/icons/socials/Facebook";
 import Email from "@/icons/socials/Email";
+import VerticalLine from "@/icons/VerticalLine";
 
 export default function Footer() {
   const contactList = [
@@ -127,15 +128,7 @@ function SocialLinks() {
         </Link>
       </div>
       <div className="flex space-x-4 items-center" data-aos="fade-up">
-        <svg width="1" height="31" viewBox="0 0 1 31" fill="none">
-          <line
-            x1="0.5"
-            y1="0.97168"
-            x2="0.499999"
-            y2="30.9717"
-            stroke="#EDECE7"
-          />
-        </svg>
+        <VerticalLine className="hidden lg:block"/>
         <div>Powered by <Link href="https://www.flowwebdesigner.com/" target="_blank" className="hover:underline">Flow Web Design</Link></div>
         <Link href="https://www.flowwebdesigner.com/">
           <svg
