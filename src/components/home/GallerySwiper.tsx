@@ -90,7 +90,7 @@ export default function GallerySwiper({ slides }: { slides: GallerySlide[] }) {
                                             detail={`731 Sq.ft`}
                                         />
                                     </div>
-                                    <p className="text-center lg:text-lg sm:text-[1.5vw] text-xs">Lower Portion</p>
+                                    <p className="text-center lg:text-lg sm:text-[1.5vw] text-xs">Lower Unit</p>
                                 </div>
                                 <div className="flex flex-col gap-2.5">
                                     <div className="flex gap-4">
@@ -105,7 +105,7 @@ export default function GallerySwiper({ slides }: { slides: GallerySlide[] }) {
                                             detail={`1214 Sq.ft`}
                                         />
                                     </div>
-                                    <p className="text-center lg:text-lg sm:text-[1.5vw] text-xs">Upper Portion</p>
+                                    <p className="text-center lg:text-lg sm:text-[1.5vw] text-xs">Upper Unit</p>
                                 </div>
 
                             </div>
