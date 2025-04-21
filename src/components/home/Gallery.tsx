@@ -20,7 +20,6 @@ export type GallerySlide = {
 
 export default async function Gallery() {
   const slides = (await getOrderedGallery()).images;
-  console.log(slides);
 
   return (
     <div className="w-full py-12">
