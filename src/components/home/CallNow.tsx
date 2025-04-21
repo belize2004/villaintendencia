@@ -18,7 +18,7 @@ const CallNow = () => {
           </div>
           <div className="mb-5 md:mb-10 p-[2vw] lg:mb-0">
             <h2 className="2xl:text-6xl  md:text-[3.8vw] text-[6vw]  font-light mb-12 mr-2" data-aos="fade-up">
-              Take Off Meet
+              Caroline Jordan
             </h2>
 
             <div className="gap-5 md:gap-16">
