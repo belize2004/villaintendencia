@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation } from "swiper/modules";
@@ -19,9 +19,6 @@ import Patio from "@/icons/Patio";
 export default function GallerySwiper({ slides }: { slides: GallerySlide[] }) {
   const swiperRef = useRef<SwiperType | null>(null);
 
-  useEffect(() => {
-    console.log("Slides order in production:", slides);
-  }, []);
   return (
     <>
       {/* Swiper carousel */}

@@ -14,7 +14,6 @@ export default function Video() {
     useEffect(() => {
         async function fetchVideo() {
             const videos = await getVideo()
-            console.log(videos) // ← check output in console
             if (videos && videos.length > 0) {
                 setVideoUrl(videos[0].videoUrl)
             }
