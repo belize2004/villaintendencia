@@ -1,3 +1,4 @@
+export const revalidate = 0;
 import React from "react";
 import { getHomeBanner } from "@/sanity/lib/queries";
 import HeroSection from "@/components/home/HeroSection";

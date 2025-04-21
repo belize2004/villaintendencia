@@ -1,6 +1,6 @@
 // app/api/revalidate/route.ts
 import { NextRequest, NextResponse } from "next/server";
-import { revalidateTag } from "next/cache";
+import { revalidatePath, revalidateTag } from "next/cache";
 
 export async function POST(req: NextRequest) {
   const secret = req.nextUrl.searchParams.get("secret");
@@ -15,6 +15,10 @@ export async function POST(req: NextRequest) {
 
     if (!_type) {
       return NextResponse.json({ message: "Missing _type" }, { status: 400 });
+    }
+
+    if (_type === 'gallery-ordered') {
+      revalidatePath('/');
     }
 
     revalidateTag(_type);

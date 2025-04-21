@@ -1,4 +1,3 @@
-export const revalidate = 0;
 import React from "react";
 import GallerySwiper from "./GallerySwiper";
 import { getOrderedGallery } from "@/sanity/lib/queries";
@@ -6,21 +5,21 @@ export type GallerySlide = {
   image: {
     _type: string;
     asset: {
-      _ref: string;
-      _type: string;
+      url: string;
+      _id: string;
     };
   };
   imageSquare: {
     _type: string;
     asset: {
-      _ref: string;
-      _type: string;
+      url: string;
+      _id: string;
     };
   };
 };
 
 export default async function Gallery() {
-  const slides = (await getOrderedGallery()).images;
+  const slides: GallerySlide[] = (await getOrderedGallery()).images;
 
   return (
     <div className="w-full py-12">

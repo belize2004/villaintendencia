@@ -132,22 +132,23 @@ export const getVideo = async () => {
 export const getOrderedGallery = async () => {
   return client.fetch(
     `*[_type == "gallery-ordered"][0] {
-        images[]{
-          image {
-            asset->{
-              _id,
-              url
-            }
-          },
-          imageSquare {
-            asset->{
-              _id,
-              url
-            }
+      images[] {
+        _key,
+        image {
+          asset->{
+            _id,
+            url
+          }
+        },
+        imageSquare {
+          asset->{
+            _id,
+            url
           }
         }
-      }`,
-    {}, // params go here
-    { next: { tags: ["gallery-ordered"] } } // revalidation tags go here
+      }
+    }`,
+    {},
+    { next: { tags: ["gallery-ordered"] } }
   );
 };

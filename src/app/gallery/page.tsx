@@ -13,6 +13,7 @@ const heroImg = "/images/galleryBanner.jpeg";
 export default async function page() {
   let galleryImages: GallerySlide[] = (await getOrderedGallery()).images;
   const galleryBanner = await getGalleryBanner();
+
   return (
     <div className="overflow-hidden">
       <HeroSection
