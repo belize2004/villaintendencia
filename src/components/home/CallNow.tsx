@@ -50,8 +50,8 @@ const CallNow = () => {
                   For Caroline, it’s not just about buying, selling or managing properties, it’s about building trust, creating joy and growing a business rooted in love for the Gulf Coast and the people who make it special.
                 </p>
               </div>
-              <div className="flex justify-between items-center mt-5" data-aos="fade-up">
-                <Image src="/images/Link_reality.png" alt="Link Reality Gulf Coast" className="" width={250} height={250} />
+              <div className="flex justify-between items-center mt-5" data-aos="fade-up" >
+                <Image src="/images/Link_realty.png" alt="Link Realty Gulf Coast" className="bg-blend-lighten" width={250} height={250} />
                 <Link
                   href="tel:+1234567890"
                   className="bg-accent hover:bg-transparent hover:text-accent border-1 hover:cursor-pointer border-accent flex justify-center items-center p-4 gap-5"
