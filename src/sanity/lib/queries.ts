@@ -128,3 +128,26 @@ export const getVideo = async () => {
     { next: { tags: ["video"] } } // revalidation tags go here
   );
 };
+
+export const getOrderedGallery = async () => {
+  return client.fetch(
+    `*[_type == "gallery-ordered"][0] {
+        images[]{
+          image {
+            asset->{
+              _id,
+              url
+            }
+          },
+          imageSquare {
+            asset->{
+              _id,
+              url
+            }
+          }
+        }
+      }`,
+    {}, // params go here
+    { next: { tags: ["gallery-ordered"] } } // revalidation tags go here
+  );
+};

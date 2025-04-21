@@ -3,20 +3,17 @@ export const revalidate = 0;
 import HeroSection from "@/components/home/HeroSection";
 import Image from "next/image";
 import React from "react";
-import { getGalleryBanner, getGalleryImagesSquare } from "@/sanity/lib/queries";
+import {
+  getGalleryBanner,
+  getGalleryImagesSquare,
+  getOrderedGallery,
+} from "@/sanity/lib/queries";
+import { urlFor } from "@/sanity/lib/image";
+import { GallerySlide } from "@/components/home/Gallery";
 const heroImg = "/images/galleryBanner.jpeg";
-type GalleryImage = {
-  imageSquare?: {
-    asset?: {
-      url: string;
-    };
-  };
-};
+
 export default async function page() {
-  let galleryImagesSquare = await getGalleryImagesSquare();
-  galleryImagesSquare = galleryImagesSquare.map((item: GalleryImage) => {
-    return item?.imageSquare?.asset?.url || heroImg;
-  });
+  let galleryImages: GallerySlide[] = (await getOrderedGallery()).images;
   const galleryBanner = await getGalleryBanner();
   return (
     <div className="overflow-hidden">
@@ -28,11 +25,10 @@ export default async function page() {
 
       <div className="w-full mx-auto 2xl:px-20 px-[3vw] py-12 mb-20">
         <div className="grid lg:grid-cols-2 2xl:gap-20 gap-[3vw]">
-          {galleryImagesSquare.map((image: string, index: number) => (
-            <div key={index} className="relative aspect-square"
-            >
+          {galleryImages.map((slide, index) => (
+            <div key={index} className="relative aspect-square">
               <Image
-                src={image}
+                src={urlFor(slide.image).url()}
                 fill
                 alt={`Modern house image ${index + 1}`}
                 className="object-cover bg-accent"
