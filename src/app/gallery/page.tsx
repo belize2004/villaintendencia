@@ -1,11 +1,9 @@
 export const revalidate = 0;
-
 import HeroSection from "@/components/home/HeroSection";
 import Image from "next/image";
 import React from "react";
 import {
   getGalleryBanner,
-  getGalleryImagesSquare,
   getOrderedGallery,
 } from "@/sanity/lib/queries";
 import { urlFor } from "@/sanity/lib/image";

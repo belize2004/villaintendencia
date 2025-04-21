@@ -1,6 +1,7 @@
+export const revalidate = 0;
 import React from "react";
 import GallerySwiper from "./GallerySwiper";
-import { getGalleryItems, getOrderedGallery } from "@/sanity/lib/queries";
+import { getOrderedGallery } from "@/sanity/lib/queries";
 export type GallerySlide = {
   image: {
     _type: string;
