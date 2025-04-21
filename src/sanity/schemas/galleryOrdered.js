@@ -49,7 +49,7 @@ export default {
         },
       ],
       options: {
-        sortable: true, // Enables drag-to-reorder in Studio
+        sortable: true,
       },
     },
   ],
