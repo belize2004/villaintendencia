@@ -27,7 +27,7 @@ export default function GallerySwiper({ slides }: { slides: GallerySlide[] }) {
         spaceBetween={30}
         slidesPerView={1}
         loop
-        autoplay
+        // autoplay
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
         }}
