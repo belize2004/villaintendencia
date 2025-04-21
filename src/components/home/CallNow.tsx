@@ -10,10 +10,10 @@ const CallNow = () => {
         <div>
           <div className="md:w-1/2 mx-auto aspect-square relative" data-aos="fade-right">
             <Image
-              src="/images/person.jpg"
+              src="/images/person.webp"
               alt="Service Areas Map"
               fill
-              className="object-cover"
+              className="object-cover bg-accent"
             />
           </div>
           <div className="mb-5 md:mb-10 p-[2vw] lg:mb-0">
@@ -60,7 +60,7 @@ const CallNow = () => {
                 </p>
               </div>
               <div className="flex justify-between items-center mt-5" data-aos="fade-up" >
-                <Image src="/images/Link_realty.png" alt="Link Realty Gulf Coast" className="bg-blend-lighten" width={250} height={250} />
+                <Image src="/images/Link_realty.webp" alt="Link Realty Gulf Coast" className="bg-blend-lighten" width={250} height={250} />
                 <Link
                   href="tel:+1234567890"
                   className="bg-accent hover:bg-transparent hover:text-accent border-1 hover:cursor-pointer border-accent flex justify-center items-center p-4 gap-5"
