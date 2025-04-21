@@ -10,18 +10,15 @@ const CallNow = () => {
         <div>
           <div className="md:w-1/2 mx-auto aspect-square relative" data-aos="fade-right">
             <Image
-              src="/images/person.jpeg"
+              src="/images/person.jpg"
               alt="Service Areas Map"
               fill
               className="object-cover"
             />
-            <div className="absolute top-0 left-0">
-              <Image src="/images/Link_reality.png" alt="Link Reality Gulf Coast" className="" width={250} height={250} />
-            </div>
           </div>
           <div className="mb-5 md:mb-10 p-[2vw] lg:mb-0">
             <h2 className="2xl:text-6xl  md:text-[3.8vw] text-[6vw]  font-light mb-12 mr-2" data-aos="fade-up">
-              Meet Caroline Jordan
+              Take Off Meet
             </h2>
 
             <div className="gap-5 md:gap-16">
@@ -53,7 +50,8 @@ const CallNow = () => {
                   For Caroline, it’s not just about buying, selling or managing properties, it’s about building trust, creating joy and growing a business rooted in love for the Gulf Coast and the people who make it special.
                 </p>
               </div>
-              <div className="flex justify-end mt-5" data-aos="fade-up">
+              <div className="flex justify-between items-center mt-5" data-aos="fade-up">
+                <Image src="/images/Link_reality.png" alt="Link Reality Gulf Coast" className="" width={250} height={250} />
                 <Link
                   href="tel:+1234567890"
                   className="bg-accent hover:bg-transparent hover:text-accent border-1 hover:cursor-pointer border-accent flex justify-center items-center p-4 gap-5"
