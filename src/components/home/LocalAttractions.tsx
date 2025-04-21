@@ -22,7 +22,7 @@ const galleryImagesSquare = [
   { src: img2, label: "Seville Square" },
   { src: img3, label: "Pensacola Museum of Art" },
   { src: img4, label: "Pensacola Museum of History" },
-  { src: img5, label: "Tivoli High Housee" },
+  { src: img5, label: "Tivoli High House" },
   { src: img6, label: "Saenger Theatre" },
   { src: img7, label: "Plaza Ferdinand VII" },
   { src: img8, label: "Veterans Memorial Park" },

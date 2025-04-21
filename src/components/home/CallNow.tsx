@@ -6,7 +6,7 @@ import Link from "next/link";
 const CallNow = () => {
   return (
     <div className="w-full py-20 bg-primary">
-      <div className="2xl:container mx-auto px-6   2xl:px-8">
+      <div className="2xl:container mx-auto px-6 2xl:px-8">
         <div>
           <div className="md:w-1/2 mx-auto aspect-square relative" data-aos="fade-right">
             <Image
@@ -28,26 +28,35 @@ const CallNow = () => {
                   <span>Owner, Coastal Link Properties LLC and Link Realty Gulf Coast LLC</span>
                   <span>Licensed Broker, Florida & Alabama</span>
                 </p>
-                <p data-aos="fade-up">Caroline Jordan is a licensed Realtor and broker in both Alabama and Florida, and the founder of Link Realty Gulf Coast a real estate agency, and Coastal Link Properties a boutique vacation rental and real estate management company serving the Gulf Coast. With more than a decade of experience in real estate and property management, Caroline has built a business rooted in integrity, connection, and exceptional service.</p>
-
-                <p data-aos="fade-up">
-                  Originally from Gulfport, Mississippi, Caroline fell in love with the Alabama and Northwest Florida coast during her younger years, eventually settling in Orange Beach where she launched her real estate career. After working with RE/MAX and gaining experience in everything from appraisals to design, she took over the vacation rental business, Rental Link, in 2014 and rebranded it as Coastal Link Properties. At the same time Caroline started Link Realty Gulf Coast, where she serves as broker and agent helping both buyers and sellers in their real estate journeys. Today, she operates both companies from Pensacola, Florida, managing a growing portfolio of investment properties and real estate listings along the Alabama and Northwest Florida coasts.
+                <p data-aos="fade-up">Caroline Jordan is a licensed Real Estate Broker in both Alabama and Florida, and the founder of Link Realty Gulf Coast, a real estate agency, and Coastal Link Properties, a boutique vacation rental management company serving the Gulf Coast.</p>
+                <p data-aos="fade-up">With over a decade of experience in real estate and property management, Caroline has built a business rooted in integrity, connection, and exceptional service.</p>
+                <p data-aos="fade-up">Originally from Gulfport, Mississippi, Caroline fell in love with the Alabama and Northwest Florida coast during her younger years, eventually settling in Orange Beach, where she launched her real estate career.
+                  After gaining experience in everything from property management, real estate, appraisals and interior design, she took over the vacation rental business Rental Link in 2014 and rebranded it as Coastal Link Properties.
                 </p>
-
                 <p data-aos="fade-up">
-                  As both a Realtor and a broker, Caroline offers her clients strategic insight into property acquisition, marketing, and long-term investment. She assists clients in identifying, purchasing, and preparing properties for the short-term rental market, creating turnkey experiences that generate strong returns and guest loyalty. Her dual licensure in Alabama and Florida allows her to serve a broad region,and her boutique approach means every owner and guest receives highly personalized care.
+                  At the same time, Caroline founded Link Realty Gulf Coast, where she serves as broker and agent, helping both buyers and sellers in their real estate journeys.
                 </p>
-
                 <p data-aos="fade-up">
-                  Caroline is known for being hands-on, honest and incredibly relationship driven. Whether she’s helping a buyer find their dream home, advising an investor on a revenue-generating property, or preparing a guest’s rental to feel like a home away from home, she gives every detail her full attention.
+                  Today, she operates both companies from Pensacola, Florida, managing a growing portfolio of investment properties and real estate listings along the Alabama and Northwest Florida coasts.
                 </p>
-
                 <p data-aos="fade-up">
-                  Caroline has cultivated a loyal network of clients, property owners, and returning guests who appreciate her warm communication, sharp market knowledge, and commitment to excellence. She sees herself not just as a real estate professional, but as a trusted partner—one who values long-term relationships over quick transactions.
+                  As both a Realtor and a broker, Caroline offers her clients strategic insight into: property acquisition, marketing and staging, long-term investment planning, preparing homes for the short-term rental market.
+                  She creates turnkey rental experiences that deliver strong returns and guest loyalty.
                 </p>
-
                 <p data-aos="fade-up">
-                  For Caroline, it’s not just about buying, selling or managing properties, it’s about building trust, creating joy and growing a business rooted in love for the Gulf Coast and the people who make it special.
+                  Thanks to her dual licensure in Alabama and Florida, Caroline serves a broad region with ease. Her boutique approach means every owner and guest receives highly personalized care. Caroline is known for being hands-on, honest, deeply relationship-driven.
+                </p>
+                <p data-aos="fade-up">
+                  Whether she’s helping a buyer find their dream home, advising an investor on a revenue-generating property, or preparing a guest’s rental to feel like a home away from home, she gives every detail her full attention.
+                </p>
+                <p data-aos="fade-up">
+                  Caroline has cultivated a loyal network of clients, property owners, and returning guests who value her warm communication, sharp market knowledge, commitment to excellence.
+                </p>
+                <p data-aos="fade-up">
+                  She sees herself not just as a real estate professional, but as a trusted partner—one who values long-term relationships over quick transactions.
+                </p>
+                <p data-aos="fade-up">
+                  For Caroline, it’s not just about buying, selling, or managing properties. It’s about building trust, creating joy, and growing a business rooted in love for the Gulf Coast and the people who make it special.
                 </p>
               </div>
               <div className="flex justify-between items-center mt-5" data-aos="fade-up" >
