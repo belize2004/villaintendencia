@@ -24,10 +24,6 @@ const CallNow = () => {
             <div className="gap-5 md:gap-16">
               {/* Left column of areas */}
               <div className="2xl:text-xl sm:text-[1.3vw]  text-[4vw] font-light space-y-3">
-                <p data-aos="fade-up" className="flex flex-col">
-                  <span>Owner, Coastal Link Properties LLC and Link Realty Gulf Coast LLC</span>
-                  <span>Licensed Broker, Florida & Alabama</span>
-                </p>
                 <p data-aos="fade-up">Caroline Jordan is a licensed Real Estate Broker in both Alabama and Florida, and the founder of Link Realty Gulf Coast, a real estate agency, and Coastal Link Properties, a boutique vacation rental management company serving the Gulf Coast.</p>
                 <p data-aos="fade-up">With over a decade of experience in real estate and property management, Caroline has built a business rooted in integrity, connection, and exceptional service.</p>
                 <p data-aos="fade-up">Originally from Gulfport, Mississippi, Caroline fell in love with the Alabama and Northwest Florida coast during her younger years, eventually settling in Orange Beach, where she launched her real estate career.
@@ -60,7 +56,7 @@ const CallNow = () => {
                 </p>
               </div>
               <div className="flex justify-between items-center mt-5" data-aos="fade-up" >
-                <Image src="/images/Link_realty.webp" alt="Link Realty Gulf Coast" className="bg-blend-lighten" width={250} height={250} />
+                <Image src="/images/Link_realty.png" alt="Link Realty Gulf Coast" className="bg-blend-lighten" width={250} height={250} />
                 <Link
                   href="tel:+1234567890"
                   className="bg-accent hover:bg-transparent hover:text-accent border-1 hover:cursor-pointer border-accent flex justify-center items-center p-4 gap-5"
