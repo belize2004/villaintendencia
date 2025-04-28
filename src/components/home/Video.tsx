@@ -26,9 +26,10 @@ export default function Video() {
             {videoUrl && (
                 <video className='w-full' src={videoUrl} autoPlay loop muted={muted}></video>
             )}
-            <div className='absolute cursor-pointer right-5 bottom-5' onClick={toggleMuted}>
+            {/* Un-Mute feature */}
+            {/* <div className='absolute cursor-pointer right-5 bottom-5' onClick={toggleMuted}>
                 {muted ? <HiMiniSpeakerXMark color='red' size={30} /> : <HiMiniSpeakerWave color='white' size={30} />}
-            </div>
+            </div> */}
         </div>
     )
 }
