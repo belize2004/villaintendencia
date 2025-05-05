@@ -63,7 +63,7 @@ export default function GallerySwiper({ slides }: { slides: GallerySlide[] }) {
             className="2xl:text-3xl sm:text-[1.8vw] text-sm mb-4"
             data-aos="fade-up"
           >
-            Villa Intendencia - $1,801,930
+            Villa Intendencia - $1, 775, 000
           </p>
           <div className="flex justify-end gap-5">
             <CircleIcon onClick={() => swiperRef.current?.slidePrev()} />

@@ -1,6 +1,5 @@
 "use client"
 import React, { useState, useEffect } from 'react'
-import { HiMiniSpeakerWave, HiMiniSpeakerXMark } from "react-icons/hi2";
 import { getVideo } from "@/sanity/lib/queries";
 
 export default function Video() {
